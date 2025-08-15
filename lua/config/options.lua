@@ -25,3 +25,7 @@ vim.g.mapleader = '\\'
 
 vim.opt.undofile = true
 vim.opt.undodir = vim.fn.stdpath('data') .. '/undo'
+
+vim.opt.swapfile = false
+
+vim.opt.showmode = false

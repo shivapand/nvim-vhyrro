@@ -29,7 +29,6 @@ return {
       ensure_installed = {
         'lua-language-server',
         'eslint-lsp',
-        'typescript-language-server',
         'prettier',
         'emmet-language-server',
         'stylelint-lsp'
