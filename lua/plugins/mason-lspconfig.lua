@@ -25,10 +25,11 @@ return {
       })
     })
 
-    require("mason-tool-installer").setup({ 
+    require("mason-tool-installer").setup({
       ensure_installed = {
         'lua-language-server',
         'eslint-lsp',
+        'typescript-language-server',
         'prettier',
         'emmet-language-server',
         'stylelint-lsp'
