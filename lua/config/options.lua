@@ -29,3 +29,5 @@ vim.opt.undodir = vim.fn.stdpath('data') .. '/undo'
 vim.opt.swapfile = false
 
 vim.opt.showmode = false
+
+vim.opt.signcolumn = "yes"
