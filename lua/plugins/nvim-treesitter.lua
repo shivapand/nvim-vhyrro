@@ -48,7 +48,7 @@ return {
       ignore_install = {},
       indent = {
         enable = true,
-        disable = { 'javascriptreact' },
+        --disable = { 'javascript' },
       },
     })
   end
