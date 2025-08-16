@@ -25,4 +25,3 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
   command = "lua OpenDiagnosticIfNoFloat()",
   group = "lsp_diagnostics_hold",
 })
-

@@ -28,3 +28,5 @@ vim.keymap.set("v", "<leader>a", function()
     lsp_format = "fallback",
   })
 end, { desc = "Format current file" })
+
+vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
