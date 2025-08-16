@@ -9,21 +9,21 @@ vim.opt.shiftwidth = 2
 
 vim.opt.clipboard = 'unnamedplus'
 
+vim.opt.termguicolors = true
+
 vim.opt.virtualedit = 'block'
  
 vim.opt.inccommand = 'split'
 
 vim.opt.ignorecase = true
 
-vim.opt.termguicolors = true
-
-vim.g.mapleader = '\\'
-
-vim.opt.undofile = true
-vim.opt.undodir = vim.fn.stdpath('data') .. '/undo'
-
-vim.opt.swapfile = false
-
 vim.opt.showmode = false
 
 vim.opt.signcolumn = "yes"
+
+vim.o.showtabline = 2
+
+vim.opt.swapfile = false
+
+vim.opt.undofile = true
+vim.opt.undodir = vim.fn.stdpath('data') .. '/undo'
