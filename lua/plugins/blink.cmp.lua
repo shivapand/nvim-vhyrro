@@ -3,12 +3,8 @@ return {
   dependencies = { 'rafamadriz/friendly-snippets' },
   version = '1.*',
   opts = {
-    keymap = { 
-      preset = 'enter',
-      ['<Tab>'] = { 'insert_next' },
-      ['<S-Tab>'] = { 'insert_prev' },
-      ['<Up>'] = { 'insert_prev' },
-      ['<Down>'] = { 'insert_next' },
+    keymap = {
+      preset = 'enter'
     },
     appearance = {
       nerd_font_variant = 'mono'
