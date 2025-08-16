@@ -7,6 +7,8 @@ return {
       preset = 'enter',
       ['<Tab>'] = { 'insert_next' },
       ['<S-Tab>'] = { 'insert_prev' },
+      ['<Up>'] = { 'insert_prev' },
+      ['<Down>'] = { 'insert_next' },
     },
     appearance = {
       nerd_font_variant = 'mono'
