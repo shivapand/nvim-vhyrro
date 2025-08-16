@@ -8,13 +8,12 @@ function OpenDiagnosticIfNoFloat()
   end
   vim.diagnostic.open_float(0, {
     scope = "cursor",
-    focusable = true,
+    focusable = false,
     close_events = {
+      "BufLeave",
       "CursorMoved",
-      "CursorMovedI",
-      "BufHidden",
-      "InsertCharPre",
-      -- "WinLeave",
+      "InsertEnter",
+      "FocusLost"
     },
   })
 end

@@ -62,7 +62,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     map('gW', require('fzf-lua').lsp_live_workspace_symbols, 'Open Workspace Symbols')
 
     map('gt', require('fzf-lua').lsp_typedefs, '[G]oto [T]ype Definition')
-
-    map('gk', vim.diagnostic.open_float, 'Open Diagnostics in Float')
   end,
 })
+
