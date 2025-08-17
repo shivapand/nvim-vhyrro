@@ -1,6 +1,9 @@
 return {
   'saghen/blink.cmp',
-  dependencies = { 'rafamadriz/friendly-snippets' },
+  dependencies = {
+    'rafamadriz/friendly-snippets',
+    'mikavilpas/blink-ripgrep.nvim'
+  },
   version = '1.*',
   opts = {
     keymap = {
@@ -16,14 +19,19 @@ return {
       },
     },
     sources = {
-      default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+      default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer', 'ripgrep' },
       providers = {
         lazydev = {
           name = "LazyDev",
           module = "lazydev.integrations.blink",
           score_offset = 100,
         },
-      },
+        ripgrep = {
+          module = "blink-ripgrep",
+          name = "Ripgrep",
+          opts = {},
+        },
+      }
     },
     fuzzy = { implementation = "prefer_rust_with_warning" }
   },
