@@ -32,6 +32,7 @@ return {
         'typescript-language-server',
         'prettier',
         'emmet-language-server',
+        'css-lsp',
         'stylelint-lsp'
       }
     })

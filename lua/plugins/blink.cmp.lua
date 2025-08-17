@@ -9,14 +9,18 @@ return {
     appearance = {
       nerd_font_variant = 'mono'
     },
-    completion = { documentation = { auto_show = true } },
+    completion = {
+      documentation = { auto_show = true },
+      trigger = {
+        show_on_insert_on_trigger_character = false
+      },
+    },
     sources = {
       default = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
       providers = {
         lazydev = {
           name = "LazyDev",
           module = "lazydev.integrations.blink",
-          -- make lazydev completions top priority (see `:h blink.cmp`)
           score_offset = 100,
         },
       },
