@@ -1,10 +1,11 @@
 return {
   "mason-org/mason-lspconfig.nvim",
+  version = '*',
   dependencies = {
     {
-      { "mason-org/mason.nvim", opts = {} },
-      "neovim/nvim-lspconfig",
-      "WhoIsSethDaniel/mason-tool-installer.nvim",
+      { "mason-org/mason.nvim", version = '*' , opts = {} },
+      {"neovim/nvim-lspconfig", version = '*' },
+      {"WhoIsSethDaniel/mason-tool-installer.nvim", version = '*' },
     }
   },
   config = function()
