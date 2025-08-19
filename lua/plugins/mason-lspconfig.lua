@@ -3,9 +3,19 @@ return {
   version = '*',
   dependencies = {
     {
-      { "mason-org/mason.nvim", version = '*' , opts = {} },
-      {"neovim/nvim-lspconfig", version = '*' },
-      {"WhoIsSethDaniel/mason-tool-installer.nvim", version = '*' },
+      {
+        "mason-org/mason.nvim",
+        version = '*',
+        opts = {}
+      },
+      {
+        "neovim/nvim-lspconfig",
+        version = '*'
+      },
+      {
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
+        version = '*'
+      },
     }
   },
   config = function()
